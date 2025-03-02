@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PG Sports Website - Upcoming Events, Live Scores, and Council Info">
+    <meta name="keywords" content="PG Sports, Basketball, Squash, Cricket, Football, Tug of War, Leaderboard">
+    <title>PG Sports - Postgraduate Championship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home"><img src="assets/images/logo.png" alt="PG Sports Logo" class="logo"></a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#live-scores">Live Scores</a></li>
+                <li><a href="#council">Council</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+            <div class="nav-toggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>PG Sports Championship</h1>
+            <p>Unleash Your Spirit, Compete with Pride!</p>
+            <a href="#events" class="btn">Explore Upcoming Events</a>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section id="events" class="container">
+        <h2>Upcoming Events</h2>
+        <div class="flex event-grid">
+            <div class="card event-card">
+                <img src="assets/images/basketball.jpg" alt="Basketball Mixed">
+                <h3>Basketball Mixed</h3>
+                <p>Date: April 15, 2025</p>
+                <p>Venue: Indoor Court</p>
+                <a href="https://docs.google.com/document/d/your-basketball-rulebook-link" target="_blank" class="btn">Rule Book</a>
+            </div>
+            <div class="card event-card">
+                <img src="assets/images/squash.jpg" alt="Squash">
+                <h3>Squash</h3>
+                <p>Date: April 16, 2025</p>
+                <p>Venue: Squash Arena</p>
+                <a href="https://docs.google.com/document/d/your-squash-rulebook-link" target="_blank" class="btn">Rule Book</a>
+            </div>
+            <div class="card event-card">
+                <img src="assets/images/cricket.jpg" alt="Cricket">
+                <h3>Cricket</h3>
+                <p>Date: April 17, 2025</p>
+                <p>Venue: Main Ground</p>
+                <a href="https://docs.google.com/document/d/your-cricket-rulebook-link" target="_blank" class="btn">Rule Book</a>
+            </div>
+            <div class="card event-card">
+                <img src="assets/images/football.jpg" alt="Football">
+                <h3>Football</h3>
+                <p>Date: April 18, 2025</p>
+                <p>Venue: Field A</p>
+                <a href="https://docs.google.com/document/d/your-football-rulebook-link" target="_blank" class="btn">Rule Book</a>
+            </div>
+            <div class="card event-card">
+                <img src="assets/images/tugofwar.jpg" alt="Tug of War">
+                <h3>Tug of War</h3>
+                <p>Date: April 19, 2025</p>
+                <p>Venue: Open Field</p>
+                <a href="https://docs.google.com/document/d/your-tugofwar-rulebook-link" target="_blank" class="btn">Rule Book</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Scores -->
+    <section id="live-scores" class="container">
+        <h2>Live Scores</h2>
+        <div class="score-update">
+            <textarea id="score-input" placeholder="Enter live score updates (e.g., Cricket: Mechanical vs Civil - 120/3)"></textarea>
+            <button id="update-score" class="btn">Update Score</button>
+        </div>
+        <div id="score-display" class="flex score-list"></div>
+    </section>
+
+    <!-- PG Sports Council -->
+    <section id="council" class="container">
+        <h2>PG Sports Council</h2>
+        <div class="flex council-grid">
+            <div class="card council-card">
+                <img src="assets/images/convener1.jpg" alt="Convener 1">
+                <h3>John Doe</h3>
+                <p>PG Sports Convener</p>
+            </div>
+            <div class="card council-card">
+                <img src="assets/images/convener2.jpg" alt="Convener 2">
+                <h3>Jane Smith</h3>
+                <p>PG Sports Convener</p>
+            </div>
+            <div class="card council-card">
+                <img src="assets/images/convener3.jpg" alt="Convener 3">
+                <h3>Alex Brown</h3>
+                <p>PG Sports Convener</p>
+            </div>
+            <div class="card council-card">
+                <img src="assets/images/convener4.jpg" alt="Convener 4">
+                <h3>Emily White</h3>
+                <p>PG Sports Convener</p>
+            </div>
+            <div class="card council-card">
+                <img src="assets/images/convener5.jpg" alt="Convener 5">
+                <h3>Michael Green</h3>
+                <p>PG Sports Convener</p>
+            </div>
+        </div>
+        <h3>PG Sports Nominee</h3>
+        <div class="card council-card nominee">
+            <img src="assets/images/nominee.jpg" alt="Nominee">
+            <h3>Sarah Johnson</h3>
+            <p>PG Sports Nominee</p>
+        </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section id="leaderboard" class="container">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Department</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>Mechanical</td><td>150</td></tr>
+                <tr><td>2</td><td>Civil</td><td>140</td></tr>
+                <tr><td>3</td><td>BSBE</td><td>130</td></tr>
+                <tr><td>4</td><td>Chemistry</td><td>120</td></tr>
+                <tr><td>5</td><td>HSS</td><td>110</td></tr>
+                <tr><td>6</td><td>CSE</td><td>100</td></tr>
+                <tr><td>7</td><td>IEOR</td><td>95</td></tr>
+                <tr><td>8</td><td>MEMS</td><td>90</td></tr>
+                <tr><td>9</td><td>Environmental Science</td><td>85</td></tr>
+                <tr><td>10</td><td>IDC</td><td>80</td></tr>
+                <tr><td>11</td><td>SJSOM</td><td>75</td></tr>
+                <tr><td>12</td><td>Earth Sciences</td><td>70</td></tr>
+                <tr><td>13</td><td>Physics</td><td>65</td></tr>
+                <tr><td>14</td><td>CSRE</td><td>60</td></tr>
+                <tr><td>15</td><td>Mathematics</td><td>55</td></tr>
+                <tr><td>16</td><td>Energy Science</td><td>50</td></tr>
+                <tr><td>17</td><td>Electrical</td><td>45</td></tr>
+                <tr><td>18</td><td>Chemical</td><td>40</td></tr>
+                <tr><td>19</td><td>CTARA</td><td>35</td></tr>
+                <tr><td>20</td><td>CPS</td><td>30</td></tr>
+                <tr><td>21</td><td>Syscon</td><td>25</td></tr>
+                <tr><td>22</td><td>Educational Technology</td><td>20</td></tr>
+                <tr><td>23</td><td>Aerospace</td><td>15</td></tr>
+                <tr><td>24</td><td>CRNTS</td><td>10</td></tr>
+                <tr><td>25</td><td>Economics</td><td>5</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container">
+        <p>&copy; 2025 PG Sports Championship. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="btn">↑ Top</button>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
